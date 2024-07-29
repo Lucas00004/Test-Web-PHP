@@ -1,0 +1,52 @@
+#top_div {
+    height: 150px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+#left_div {
+    height: 500px;
+    width: 20%;
+    background-color: aquamarine;
+    float: left;
+}
+
+#center_div {
+    height: 500px;
+    width: 60%;
+    float: left;
+    background-color: bisque;
+}
+
+#right_div {
+    height: 500px;
+    width: 19.8%;
+    float: left;
+    background-color: burlywood;
+}
+
+#bottom_div {
+    height: 100px;
+    width: 100%;
+    background-color: yellow;
+    clear: both;
+}
+
+/* Menu */
+.cateOrder {
+    font-weight: bold;
+}
+
+.itemOrder {
+    font-style: italic;
+}
+
+ul{
+    list-style: square;
+    margin: 0;
+    padding-left: 15px;
+}
+
+a{
+    text-decoration: none;
+}
