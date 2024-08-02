@@ -6,10 +6,12 @@
                 require './elements_NMD/myUser/userView.php';
                 break;
 
-            case 'ExJs':
-                # code...
+            case 'exjs':
+                require './elements_NMD/pageJs/exjs.php';
                 break;
 
+            case 'updateuser';
+                require './elements_NMD/myUser/userUpdate.php';
             default:
                 # code...
                 break;

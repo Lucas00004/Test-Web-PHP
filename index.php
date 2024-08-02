@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web cua tui</title>
-
     <link type="text/css" rel="stylesheet" href="CSS/Style.css"/>
+    <script type="text/javascript" src="js_NMD/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="js_NMD/jsScript.js"></script>
+
 </head>
 <body>
 
@@ -17,21 +19,15 @@
         ?>
     </div>
     <div id="center_div">
-        <?php   require 'pageJS/exjs.php'
-        ?>
-        <!-- <?php   require 'elements_NMD/myUser/userView.php'
-        ?> -->
-        <?php   require './elements_NMD/center.php'
+        <?php   require 'elements_NMD/center.php'
         ?>
     </div>
     <div id="right_div">
 
     </div>
     <div id="bottom_div">
-
     </div>
     
-<script type="text/javascript" src="js_NMD/jquery-3.7.1.js"></script>
-<script type="text/javascript" src="js_NMD/jsScript.js"></script>
+
 </body>
 </html>

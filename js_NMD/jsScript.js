@@ -8,16 +8,16 @@ $(document).ready(function () {
     $(".itemOrder").mouseleave(function () { 
         $(this).slideUp();
     });
-});
 
-// Form
-$("#form").submit(function (e) { 
-    // e.preventDefault();
+
+Form
+$("#formreg").submit(function (e) { 
+    e.preventDefault();
     // Lấy username
     var username = $("input[name*= 'username']").val();
     if(username === 0 || username.length < 6){
         $("input[name*= 'username']").focus();
-        $("#reset").html("Username chưa hợp lệ !");
+        $("#noteForm").html('Username chưa hợp lệ !');
         return false;
     }
 
@@ -28,7 +28,7 @@ $("#form").submit(function (e) {
             e.preventDefault();
             
         });
-        $("#reset").html("Mật khẩu chưa hợp lệ !");
+        $("#noteForm").html("Mật khẩu chưa hợp lệ !");
         return false;
     }
 
@@ -36,7 +36,7 @@ $("#form").submit(function (e) {
     var hoten = $("input[name*= 'hoten']").val();
     if (hoten.length === 0 || hoten.length < 6) {
         $("input[name*= 'hoten']").focus(function (e) {});
-        $("#reset").html("Họ tên chưa hợp lệ !");
+        $("#noteForm").html("Họ tên chưa hợp lệ !");
         return false;
     }
 
@@ -44,7 +44,7 @@ $("#form").submit(function (e) {
     var ngaysinh = $("input[name*= 'ngaysinh']").val();
     if (ngaysinh.length === 0 || ngaysinh.length < 6) {
         $("input[name*= 'ngaysinh']").focus(function (e) {});
-        $("#reset").html("Ngày sinh chưa hợp lệ !");
+        $("#noteForm").html("Ngày sinh chưa hợp lệ !");
         return false;
     }
 
@@ -52,7 +52,7 @@ $("#form").submit(function (e) {
     var diachi = $("input[name*= 'diachi']").val();
     if (diachi.length === 0 ) {
         $("input[name*= 'diachi']").focus(function (e) {}); 
-        $("#reset").html("Địa chỉ chưa hợp lệ !");
+        $("#noteForm").html("Địa chỉ chưa hợp lệ !");
         return false;
     }
 
@@ -60,11 +60,17 @@ $("#form").submit(function (e) {
     var sodienthoai = $("input[name*= 'sodienthoai']").val();
     if (sodienthoai.length === 0 ) {
         $("input[name*= 'sodienthoai']").focus(function (e) {});
-        $("#reset").html("Số điện thoại chưa hợp lệ !");
+        $("#noteForm").html("Số điện thoại chưa hợp lệ !");
         return false;
     }
 
     return true;
 });
+
+
+
+});
+
+
 
 
